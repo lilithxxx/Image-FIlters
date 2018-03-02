@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filter</title>
+<h1>Image Filters</h1>
+<script src="filter.js" type="text/javascript"></script>
+<link href="filter.css" type="text/css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="/home/jude/Downloads/bootstrap-4.0.0-beta.2-dist/css/bootstrap-reboot.css">
+<script src="dltp.js" type="text/javascript"></script>
+</head>
+<body>
+<canvas id="c1">
+</canvas>
+<p><b>Select image:</b></p>
+<p><input type="file" id="f1" multiple="false" accept="image/*" onchange="upload()"></p>
+<p>For Red filter click this:<input type="button" value="Red" onclick="red()">
+Window-Pane filter(applies a window pane to a scenery):-
+</p>
+<p>For Yellow filter click this:<input type="button" value="Yellow" onclick="yellow()">
+Choose Color of Pane:<input type="color" value="#000000" onchange="pane()" id="clr">
+</p>
+<p>For Grayscale filter click this:<input type="button" value="Grayscale" onclick="gray()">
+For blurring click this:<input type="button" value="Blur" onclick="blur1()">
+</p>
+<p>For Blue filter click this:<input type="button" value="Blue" onclick="blue()">
+For Green filter click this:<input type="button" value="Green" onclick="green()"></p>
+<p>For Cyan filter click this:<input type="button" value="Cyan" onclick="cyan()">
+For Magenta filter click this:<input type="button" value="Magenta" onclick="magenta()"></p>
+<p><b>Brightness Control:</b></p>
+</p><input type="button" value="+" onclick="bright1()">
+<input type="button" value="-" onclick="bright_1()"></p>
+<p><em>For reset:-</em><input type="button" value="Click here" onclick="reset()"></p>
+</body>
+</html>
+
